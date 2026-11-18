@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1F2847" />
+    <meta name="description" content="COSMOLAXI — uma central gamer educacional para explorar novos mundos." />
+    <title>COSMOLAXI — Base do Explorador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#inicio" aria-label="COSMOLAXI, início">
+          <span class="brand-mark" aria-hidden="true"><i></i><b></b></span>
+          <span>COSMO<span class="brand-light">LAXI</span></span>
+        </a>
+        <nav class="main-nav" aria-label="Navegação principal">
+          <a class="nav-link active" href="#base" data-view="base">Base do explorador</a>
+          <a class="nav-link" href="#mapa" data-view="mapa">Mapa galáctico</a>
+        </nav>
+        <div class="player-chip">
+          <span class="player-chip-avatar" aria-hidden="true">✦</span>
+          <span class="player-name">Luna</span>
+          <span class="level-pill">Nv. 08</span>
+        </div>
+        <button class="menu-toggle" aria-label="Abrir navegação" aria-expanded="false"><span></span><span></span></button>
+      </header>
+
+      <main id="inicio">
+        <section class="welcome-bar" aria-label="Resumo do explorador">
+          <div><span class="eyebrow">QUARTA-FEIRA, 18 DE NOVEMBRO</span><h1>Olá, exploradora <span class="wave">✦</span></h1><p>Sua próxima grande descoberta está a um portal de distância.</p></div>
+          <div class="stats-row">
+            <div class="stat"><span class="stat-icon xp-icon">✧</span><span><b>2.480</b><small>XP total</small></span></div>
+            <div class="stat"><span class="stat-icon coin-icon">◉</span><span><b>340</b><small>cosmo-moedas</small></span></div>
+            <div class="stat"><span class="stat-icon badge-icon">✦</span><span><b>6</b><small>conquistas</small></span></div>
+          </div>
+        </section>
+
+        <section class="screen active" id="base" aria-labelledby="base-title">
+          <div class="section-heading"><div><span class="eyebrow">SEU REFÚGIO ENTRE AS ESTRELAS</span><h2 id="base-title">Base do explorador</h2></div><span class="online-status"><i></i> Base segura</span></div>
+          <div class="room-scene">
+            <div class="scene-stars" aria-hidden="true"></div>
+            <div class="room-label"><span class="label-icon">⌂</span><span><b>QUARTO ESPACIAL</b><small>Seu cantinho no universo</small></span></div>
+            <div class="room-controls"><button class="icon-button" aria-label="Decoração em breve" title="Personalização visual demonstrativa">✧</button><button class="icon-button" aria-label="Mais opções em breve" title="Mais opções em breve">···</button></div>
+            <div class="window-view" aria-hidden="true"><div class="window-glow"></div><span class="window-planet"></span><span class="window-moon"></span><span class="window-star star-a">✦</span><span class="window-star star-b">·</span><span class="window-star star-c">✧</span></div>
+            <div class="shelf shelf-one"><span>✦</span><span>◈</span><span>✧</span></div>
+            <div class="wall-planet planet-art" aria-hidden="true"><i></i></div>
+            <div class="plant" aria-hidden="true"><i></i><b></b></div>
+            <div class="room-floor"></div>
+            <div class="rug"></div>
+            <div class="desk"><div class="desk-top"></div><div class="desk-leg left"></div><div class="desk-leg right"></div><div class="desk-screen"><span>✦</span></div><div class="desk-lamp"></div></div>
+            <div class="bed"><div class="bed-head"></div><div class="pillow"></div><div class="blanket"></div><div class="bed-base"></div></div>
+            <div class="avatar-figure" aria-label="Avatar explorador Luna"><div class="avatar-aura"></div><div class="avatar-hair"></div><div class="avatar-face"><span class="face-eye"></span><span class="face-eye second"></span><span class="face-smile"></span></div><div class="avatar-suit"><span class="suit-mark">✦</span></div><div class="avatar-boot"></div></div>
+            <div class="avatar-caption"><span class="caption-star">✦</span><span><b>Luna</b><small>Exploradora estelar</small></span><span class="edit-mark">✎</span></div>
+            <button class="portal" id="portalButton" aria-label="Abrir portal para explorar os planetas"><span class="portal-orbit orbit-outer"></span><span class="portal-orbit orbit-inner"></span><span class="portal-core"><span>✦</span></span><span class="portal-spark spark-one">✧</span><span class="portal-spark spark-two">·</span><span class="portal-prompt">EXPLORAR UNIVERSO <b>↗</b></span></button>
+            <div class="room-hint"><span>✧</span> Seu próximo mundo está esperando</div>
+          </div>
+          <div class="below-room">
+            <div class="level-card"><div class="level-orb">08</div><div class="level-copy"><div class="level-title"><b>Nível 08 · Navegadora cósmica</b><span>2.480 / 3.000 XP</span></div><div class="progress-track"><span style="width:82.6%"></span></div><small>Faltam 520 XP para o próximo nível</small></div></div>
+            <div class="achievement"><span class="achievement-icon">✦</span><div><small>CONQUISTA RECENTE</small><b>Primeira órbita</b></div><span class="achievement-check">✓</span></div>
+          </div>
+        </section>
+
+        <section class="screen map-screen" id="mapa" aria-labelledby="map-title" hidden>
+          <div class="section-heading map-heading"><div><span class="eyebrow">ESCOLHA SEU PRÓXIMO DESTINO</span><h2 id="map-title">Mapa galáctico</h2><p>Oito mundos. Infinitas descobertas. Qual será sua rota?</p></div><button class="back-button" data-view="base">← Voltar à base</button></div>
+          <div class="galaxy-map">
+            <div class="map-nebula nebula-one"></div><div class="map-nebula nebula-two"></div>
+            <svg class="constellation-lines" viewBox="0 0 1000 500" preserveAspectRatio="none" aria-hidden="true"><path d="M115 154 Q210 82 275 180 T448 165 Q548 200 603 105 T810 160 Q887 230 850 350 T676 370 Q561 425 480 340 T288 370 Q193 310 115 154"/><path d="M275 180 Q330 290 288 370 M448 165 Q460 255 480 340 M603 105 Q615 250 676 370"/></svg>
+            <div class="map-center"><span class="center-sun">✦</span><small>SISTEMA COSMOLAXI</small></div>
+            <button class="planet-node littera" data-planet="LITTERA" aria-label="Explorar planeta Littera"><span class="planet-ball"><i>✧</i></span><span class="planet-name">LITTERA</span><small>Planeta das palavras</small></button>
+            <button class="planet-node numbix" data-planet="NUMBIX" aria-label="Explorar planeta Numbix"><span class="planet-ball"><i>∿</i></span><span class="planet-name">NUMBIX</span><small>Reino dos números</small></button>
+            <button class="planet-node tempora" data-planet="TEMPORA" aria-label="Explorar planeta Tempora"><span class="planet-ball"><i>◷</i></span><span class="planet-name">TEMPORA</span><small>Órbita do tempo</small></button>
+            <button class="planet-node elementa" data-planet="ELEMENTA" aria-label="Explorar planeta Elementa"><span class="planet-ball"><i>✺</i></span><span class="planet-name">ELEMENTA</span><small>Mundo dos elementos</small></button>
+            <button class="planet-node orbis" data-planet="ORBIS" aria-label="Explorar planeta Orbis"><span class="planet-ball"><i>◎</i></span><span class="planet-name">ORBIS</span><small>Horizonte azul</small></button>
+            <button class="planet-node link" data-planet="LINK" aria-label="Explorar planeta Link"><span class="planet-ball"><i>⌘</i></span><span class="planet-name">LINK</span><small>Conexões cósmicas</small></button>
+            <button class="planet-node formia" data-planet="FORMIA" aria-label="Explorar planeta Formia"><span class="planet-ball"><i>◇</i></span><span class="planet-name">FORMIA</span><small>Ateliê de formas</small></button>
+            <button class="planet-node movix" data-planet="MOVIX" aria-label="Explorar planeta Movix"><span class="planet-ball"><i>➤</i></span><span class="planet-name">MOVIX</span><small>Galáxia em movimento</small></button>
+          </div>
+          <div class="map-footer"><span><i class="legend-dot"></i> Planetas disponíveis para exploração</span><span>✧ Selecione um planeta para saber mais</span></div>
+        </section>
+      </main>
+      <footer class="site-footer"><span>✦ COSMOLAXI</span><span>Um universo de descobertas começa com você.</span><span class="demo-tag">DEMONSTRAÇÃO</span></footer>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
